@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+   div{
+    padding-left: 570px;
+   }
+   
+   
+   span{
+        background-color: brown;
+      display: flex;
+     justify-content: center;
+    align-items: center;
+    width: 215px;
+    
+    
+
+        
+
+    }
+    h1{
+        
+        background-color: aqua;
+    }
+    body{
+        background-color: green;
+    }
+    input{
+        border-radius: 10px;
+        border: 5px solid yellow;
+        
+    }
+    :focus{
+        background-color: blue;
+        color: pink;
+    }
+    
+    
+</style>
+</head>
+
+<body>
+    <script>
+        function data(){
+            var a=document.getElementById("n1").value;
+            var b=document.getElementById("n2").value;
+            var c=document.getElementById("n3").value;
+            var d=document.getElementById("n3").value;
+
+            if(a==""||b==""||c==""||d=="")
+        {
+            alert("all field are mendatory")
+            return false;
+
+        }
+           else if(b.length<10||b.length>10)
+           {
+            alert("number should be of 10")
+            return false;
+
+           }
+           else if(isNaN(b))
+           {
+            alert("only is number is allowed")
+            return false;
+
+           }
+           else if(c!=d){
+            alert("please enter same password")
+            return false;
+           }
+           else if(a!=="pujan bhandari"){
+            alert("write the correct user id")
+            return false;
+           }
+           else if(c!=="123321"){
+            alert("write the correct password")
+            return false;
+           }
+           else{
+            true;
+           }
+        }
+        </script>
+        <h1 align="center">LOGIN</h1>
+            <div><span class="container"><fieldset>
+<legend align="center">FILL THE FORM</legend>
+        <form onsubmit="return data()" action="5.html">
+
+    
+            <h3>user id:</h3> <input type="text" id="n1"><br>
+            <h3>contact:</h3> <input type="text" id="n2"><br>
+            <h3>password:</h3> <input type="password" id="n3"><br>
+            <h3>confirm password:</h3> <input type="password" id="n4"><br><br><br>
+            <input type="submit" value="submit your data"><br>
+        </form>
+ </fieldset>
+</span></div>
+
+</body>
+</html>
